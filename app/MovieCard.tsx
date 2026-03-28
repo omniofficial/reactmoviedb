@@ -1,4 +1,5 @@
 type MovieData = {
+    id: number;
     title: string;
     image: string;
     releaseDate: string;
