@@ -1,3 +1,14 @@
+"use client";
+import { useEffect, useState } from "react";
+import MovieCard from "./MovieCard";
+
+const BASE_URL = "https://api.themoviedb.org/3/discover/movie";
+const BEARER_TOKEN =
+    "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmY2Q5MTE0ZDkxNjQxNDYyMWRmZDkwN2M0ZGRjOTRlZCIsIm5iZiI6MTc3MzAwNzk0Mi4zMzMsInN1YiI6IjY5YWRmNDQ2ODUzMTgyNDgzMDRlYjEyNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.GplMZ8ZbFpH1Svdht9y9998mPJD233SNtJ8rtyVGvBw";
+
+const pagesToLoad = 40;
+const moviesPerPage = 20;
+
 export default function Page() {
     return (
         <div>
