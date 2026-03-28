@@ -1,26 +1,108 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: "Times New Roman", Times, serif, sans-serif;
+    background-color: #b0c4de;
+}
+
+.header h1 {
+    text-align: center;
+    color: white;
+    padding: 40px;
+    font-size: 45px;
+    background-color: #1f2c41;
+}
+
+.bottom-section {
+    display: flex;
+    gap: 10px;
+    padding: 2px;
+    background-color: #1f2c4f;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+#search {
+    width: 150px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+#sort {
+    width: 160px;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.content-container {
+    display: grid;
+}
+
+/* All movies will have this style*/
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px 10px 30px 10px;
+}
+
+.movie-card img {
+    width: 150px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.movie-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #333;
+}
+
+.movie-card p {
+    font-size: 1rem;
+    margin: 2px 0;
+    color: #555;
+}
+
+/* Bottom part with previous, page info, and next buttons */
+.footer-section {
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-section button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.footer-section button:hover {
+    background-color: #0056b3;
 }
