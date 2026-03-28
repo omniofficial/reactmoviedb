@@ -1,5 +1,3 @@
-import styles from "./MovieCard.module.css";
-
 type MovieData = {
     title: string;
     image: string;
