@@ -40,4 +40,4 @@ The app will be available at [http://localhost:3000](http://localhost:3000).
 
 ## Live site via Vercel:
 
-The live site will be available [here](google.com).
+The live site will be available [here](https://reactmoviedb-three.vercel.app/).
